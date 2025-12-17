@@ -2,5 +2,7 @@ Blind Signal Separation of Signals with High Velocity (light) or for Short Dista
 
 No prior on source signal and no signal interdependence prior assumed. 
 
-Based on a earlier work:
+Completed in 2025. 
+
+Based on earlier work:
 Glandon, Alexander M. "Recurrent neural networks and matrix methods for cognitive radio spectrum prediction and security." (2017).
