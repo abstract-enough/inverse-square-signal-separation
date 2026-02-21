@@ -16,6 +16,8 @@ receiver m has location Rmx,Rmy,RmZ
 
 the low rank factorization can be uniquely identified if the matrix U is parameterized only by the unknown transmitter locations
 
+this is because Umn=||Sn-Rm||^-2
+
 Completed in 2026. 
 
 Based on earlier work:
