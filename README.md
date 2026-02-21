@@ -12,7 +12,7 @@ P=UQ (matrix factorization model)
 
 source n has location Snx,Sny,Snz
 
-receiver m has location Rmx,Rmy,RmZ
+receiver m has location Rmx,Rmy,Rmz
 
 the low rank factorization can be uniquely identified if the matrix U is parameterized only by the unknown transmitter locations
 
