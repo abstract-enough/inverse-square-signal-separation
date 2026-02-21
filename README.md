@@ -2,6 +2,20 @@ Blind Signal Separation (Independent Component Analysis) of Signals with High Ve
 
 No prior on source signal and no signal interdependence prior assumed. 
 
+Pmt is signal amplitude at receiver m and time (or time×frequency) t
+
+Umn is inverse square of distance signal loss from transmitter n to receiver m
+
+Qnt is signal amplitude at source n and time (or time×frequency) t
+
+P=UQ (matrix factorization model)
+
+source n has location Snx,Sny,Snz
+
+receiver m has location Rmx,Rmy,RmZ
+
+the low rank factorization can be uniquely identified if the matrix U is parameterized only by the unknown transmitter locations
+
 Completed in 2026. 
 
 Based on earlier work:
