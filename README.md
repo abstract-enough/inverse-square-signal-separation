@@ -18,7 +18,11 @@ the low rank factorization can be uniquely identified if the matrix U is paramet
 
 this is because Umn=||Sn-Rm||^-2
 
-Completed in 2026. 
+![results_figure][window_1000_distance_2m.png]
+
+Published in Optics and Photonics for Information Processing XX
+Blind source separation of inverse square law signals with no prior
+Alexander Glandon, Khan M. Iftekharuddin, Old Dominion Univ. (United States); Sasanka Adikari, Clarkson Univ. (United States)
 
 Based on earlier work:
 Glandon, Alexander M. "Recurrent neural networks and matrix methods for cognitive radio spectrum prediction and security." (2017).
