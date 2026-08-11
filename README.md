@@ -18,7 +18,7 @@ the low rank factorization can be uniquely identified if the matrix U is paramet
 
 this is because Umn=||Sn-Rm||^-2
 
-![results_figure][window_1000_distance_2m.png]
+![results_figure](window_1000_distance_2m.png)
 
 Published in Optics and Photonics for Information Processing XX
 Blind source separation of inverse square law signals with no prior
