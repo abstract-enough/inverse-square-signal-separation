@@ -234,15 +234,36 @@ for test_index in range(1):
   plt.close()
   
   for n in range(N):
-    plt.plot(Q_target[n,:], label = "Source Signal Target")
-    plt.plot(Q_guess[n,:], label = "Source Signal Prediction")
+    plt.plot(Q_target[n,:], label = "Source Signal Target", linewidth=0.5)
+    plt.plot(Q_guess[n,:], label = "Source Signal Prediction", linewidth=0.5)
     plt.xlabel("Time")
     plt.ylabel("Amplitude")
-    plt.title("Source "+str(n+1)+" Prediction Error")
+    plt.title("Source "+str(n+1)+" Prediction")
     plt.legend()
     plt.show()
     plt.savefig("Source "+str(n+1)+" Prediction Error_"+str(save_str)+".png")
     plt.close()
+
+plt.plot(Q_target[0,0:99], label = "Source Signal Target", linewidth=0.5, marker='o', color='red')
+plt.plot(Q_guess[0,0:99], label = "Source Signal Prediction", linewidth=0.5, marker='x', color = 'blue')
+plt.xlabel("Time")
+plt.ylabel("Amplitude")
+plt.ylim(-3, 3)
+plt.title("Source "+str(1)+" Prediction")
+plt.legend()
+plt.show()
+plt.savefig("Source "+str(1)+" Prediction_subwindow"+str(save_str)+".png")
+plt.close()
+
+plt.plot(Q_target[0,0:99]-Q_guess[0,0:99], label = "Residual (Signal - Prediction)", linewidth=0.5)
+plt.xlabel("Time")
+plt.ylabel("Amplitude")
+plt.ylim(-3, 3)
+plt.title("Source "+str(1)+" Prediction Residual")
+plt.legend()
+plt.show()
+plt.savefig("Source "+str(1)+" Prediction Residual_"+str(save_str)+".png")
+plt.close()
 
 
 #import statistics
