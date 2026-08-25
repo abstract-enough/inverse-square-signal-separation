@@ -60,7 +60,7 @@ for test_index in range(10):
   print("D", D_target)
   print("U", np.divide(np.ones((M,N)),np.square(D_target)))
   
-  P = np.matmul(np.divide(np.ones((M,N)),np.square(D_target)),Q_target)
+  P = np.matmul(np.divide(np.ones((M,N)),D_target),Q_target)
   
   print("P", P)
   
@@ -97,7 +97,7 @@ for test_index in range(10):
      U_guess = np.zeros((M,N))
      for m in range(M):
         for n in range(N):
-          U_guess[m,n] = np.power(np.sum(np.square(R[m,:]-S_guess[n,:])),-1)
+          U_guess[m,n] = np.power(np.sum(np.square(R[m,:]-S_guess[n,:])),-0.5)
   
      error = P-np.matmul(U_guess,Q_guess)
      error_vector = error.reshape((M*T,))

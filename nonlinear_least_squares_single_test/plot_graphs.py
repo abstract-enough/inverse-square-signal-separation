@@ -60,7 +60,6 @@ for test_index in range(1):
   print("D", D_target)
   print("U", np.divide(np.ones((M,N)),np.square(D_target)))
   
-  #P = np.matmul(np.divide(np.ones((M,N)),np.square(D_target)),Q_target)
   P = np.matmul(np.divide(np.ones((M,N)),D_target),Q_target)
   
   print("P", P)

@@ -58,7 +58,7 @@ print("S", S_target)
 print("D", D_target)
 print("U", np.divide(np.ones((M,N)),np.square(D_target)))
 
-P = np.matmul(np.divide(np.ones((M,N)),np.square(D_target)),Q_target)
+P = np.matmul(np.divide(np.ones((M,N)),D_target),Q_target)
 
 print("P", P)
 
@@ -107,7 +107,7 @@ def loss_from_prediction(X_pred):
         #U_guess[m,n] = tf.pow(tf.reduce_sum(tf.square(R[m,:]-S_guess[n,:])),-1)
    U_guess = tf.pow(tf.reduce_sum(tf.square(\
      tf.tile(tf.reshape(R,(M,1,3)),(1,N,1))-\
-     tf.tile(tf.reshape(S_guess,(1,N,3)),(M,1,1))),2),-1)
+     tf.tile(tf.reshape(S_guess,(1,N,3)),(M,1,1))),2),-0.5)
 
 
 
