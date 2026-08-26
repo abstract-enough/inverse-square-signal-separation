@@ -224,7 +224,8 @@ for test_index in range(1):
   S_target_2D = pca.transform(S_target)
   
   for n in range(N):
-    plt.scatter(x=[S_target_2D[n,0],S_guess_2D[n,0]],y=[S_target_2D[n,1],S_guess_2D[n,1]], label="Source "+str(n))
+    plt.scatter(x=S_target_2D[n,0],y=S_target_2D[n,1], label="Source "+str(n)+" Target Location", color='black')
+    plt.scatter(x=S_guess_2D[n,0],y=S_guess_2D[n,1], label="Source "+str(n)+" Location Prediction", marker='x')
   plt.xlabel("Spatial Dimension 1")
   plt.ylabel("Spatial Dimension 2")
   plt.title("Source Locations Error Projection in 2D Space")

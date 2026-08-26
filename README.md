@@ -20,6 +20,8 @@ this is because Umn=||Sn-Rm||^-1 (corrected to -1 for amplitude decay)
 
 ![signal_plot](Source_1_Prediction_subwindowsnrdb_80_dist_2_grid_6.png)
 
+![positions_plot](Source_Location_Error_Projection_in_2D_Space_snrdb_80_dist_2_grid_6.png)
+
 Published in Optics and Photonics for Information Processing XX
 Blind source separation of inverse square law signals with no prior
 Alexander Glandon, Khan M. Iftekharuddin, Old Dominion Univ. (United States); Sasanka Adikari, Clarkson Univ. (United States)
